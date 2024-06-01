@@ -1,0 +1,188 @@
+/* Start Global Rule */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "roboto", sans-serif;
+
+}
+
+/* End Global Rule */
+
+main .container {
+    width: 800px;
+    padding: 0px 25px 40px;
+    padding-top: 110px;
+    margin: 0px auto;
+}
+
+main .container h2 {
+    font-size: 34px;
+    text-align: center;
+    color: #2C3345;
+    margin-bottom: 65px;
+}
+
+main .container .des {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+main .container .row {
+    margin: 45px 0px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .row label {
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+
+main .container .row label span {
+    color: red;
+}
+
+main .container .row div .input-field {
+    width: 450px;
+    border: 1px solid #b8bdc9;
+    border-radius: 4px;
+    padding: 12px 14px;
+    font-size: 16px;
+}
+
+main .container .row div .input-field::placeholder {
+    color: #b8bdc9;
+    font-weight: 100;
+}
+
+main .container .row div .details {
+    color: #464d5f;
+    margin-top: 11px;
+    font-size: 12px;
+}
+
+main .container .row .left .input-field,
+main .container .row .right .input-field {
+    width: 100%;
+    border: 1px solid #b8bdc9;
+    border-radius: 4px;
+    padding: 12px 14px;
+    font-size: 16px;
+    margin-top: 18px;
+
+}
+
+
+main .container .row .left .input-field::placeholder,
+main .container .row .right .input-field::placeholder {
+    color: #b8bdc9;
+    font-weight: 100;
+}
+
+main .container .row .left {
+    width: 330px;
+}
+
+main .container .row .right {
+    width: 330px;
+}
+
+.select-color {
+    color: #b8bdc9;
+}
+
+main .container .row .choose-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 70px;
+}
+
+main .container .row .choose-input .choice {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+main .container .row .choose-input .choice label {
+    margin-right: 30px;
+    color: #2C3345;
+    font-weight: 300;
+}
+
+main .container .row .choose-input .choice input {
+    width: 18px;
+    height: 40px;
+
+}
+
+main .container .exp {
+    justify-content: unset;
+}
+
+
+.k-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #18bd5b;
+    color: white;
+    font-size: 17px;
+    width: 190px;
+    padding: 14px 50px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.last-row {
+    margin-bottom: 60px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e7f2;
+}
+
+.last-row label {
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.last-row .input-container {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.last-row .input-container .left {
+    margin-right: 50px;
+}
+
+.last-row .input-container .choice {
+    display: flex;
+    align-items: center;
+}
+
+.last-row .input-container .choice label {
+    margin-right: 30px;
+    color: #2C3345;
+    font-weight: 300;
+}
+
+.last-row .input-container .choice input {
+    width: 18px;
+    height: 40px;
+}
