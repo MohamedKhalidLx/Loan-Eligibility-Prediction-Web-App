@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./static/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Bank System</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>Loan Application Form</h2>
+            <p class="des">Contact Information</p>
+            <div class="row">
+
+                <label for="ApplicantName">Applicant Name <span class="req">*</span>
+                </label>
+                <div>
+
+                    <input type="text" class="input-field" placeholder="Your name" name="ApplicantName" required />
+                    <p class="details">ex: Mohamed Khalid Mahmoud</p>
+
+                </div>
+
+            </div>
+            <div class="row">
+
+                <label for="phoneNumber">Phone Number <span class="req">*</span>
+                </label>
+                <div>
+                    <input type="tel" class="input-field" placeholder="(+20) 000-000-0000" name="phoneNumber"
+                        required />
+                    <p class="details">(+20) 112-170-9192</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <label for="EmailAddress">Email <span class="req">*</span> </label>
+                <div>
+
+                    <input type="email" class="input-field" placeholder="ex: myname@example.com" name="EmailAddress"
+                        required />
+                    <p class="details">example@example.com</p>
+
+                </div>
+
+            </div>
+            <form action="{{ url_for('predict') }}" method="post">
+                <div class="row">
+
+                    <div class="left">
+                        <label for="ApplicantIncome">Applicant Income (monthly) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="ApplicantIncome" class="input-field" placeholder="0$" required />
+                    </div>
+
+                    <div class="right">
+                        <label for="ApplicantIncome">Co-Applicant Income (monthly) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="CoapplicantIncome" class="input-field" placeholder="0$" required />
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="ApplicantIncome">Loan Amount (In thousands) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="LoanAmount" class="input-field" placeholder="0$" required />
+                    </div>
+
+                    <div class="right">
+                        <label for="ApplicantIncome">Loan Amount Term (In months) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Loan_Amount_Term" class="input-field" placeholder="0$" required />
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Credit_History">Credit History <span class="req">*</span></label>
+                        <select class="input-field" name="Credit_History" required>
+                            <option value="">Please Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+
+                    <div class="right">
+                        <label for="Gender">Gender<span class="req">*</span></label>
+                        <select class="input-field" name="Gender" required>
+                            <option value="">Please Select</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Dependents_0">Dependents (0) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Dependents_0" class="input-field" placeholder="0 or 1" required />
+                    </div>
+
+                    <div class="right">
+                        <label for="Dependents_1">Dependents (1) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Dependents_1" class="input-field" placeholder="0 or 1" required />
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Dependents_2">Dependents (2) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Dependents_2" class="input-field" placeholder="0 or 1" required />
+                    </div>
+
+                    <div class="right">
+                        <label for="Dependents_3+">Dependents (3+) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Dependents_3+" class="input-field" placeholder="0 or 1" required />
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Married">Marital Status <span class="req">*</span></label>
+                        <select class="input-field" name="Married" required>
+                            <option value="">Please Select</option>
+                            <option value="1">Yes (Married)</option>
+                            <option value="0">No (Single)</option>
+                        </select>
+                    </div>
+
+                    <div class="right">
+                        <label for="Education">Education<span class="req">*</span></label>
+                        <select class="input-field" name="Education" required>
+                            <option value="">Please Select</option>
+                            <option value="1">Graduate</option>
+                            <option value="0">Not Graduate</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Self_Employed">Self Employed<span class="req">*</span></label>
+                        <select class="input-field" name="Self_Employed" required>
+                            <option value="">Please Select</option>
+                            <option value="1">Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </div>
+
+                    <div class="right">
+                        <label for="Property_Area_Rural">Property Area (Rural)<span class="req">*</span>
+                        </label>
+                        <input type="number" name="Property_Area_Rural" class="input-field" placeholder="0 or 1"
+                            required />
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="left">
+                        <label for="Property_Area_Semiurban">Property Area (Semiurban) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Property_Area_Semiurban" class="input-field" placeholder="0 or 1"
+                            required />
+                    </div>
+
+                    <div class="right">
+                        <label for="Property_Area_Urban">Property Area (Urban) <span class="req">*</span>
+                        </label>
+                        <input type="number" name="Property_Area_Urban" class="input-field" placeholder="0 or 1"
+                            required />
+                    </div>
+
+                </div>
+
+                <button type="submit" class="k-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
