@@ -10,6 +10,7 @@ This project is designed to predict the eligibility of a loan application based 
 - [Usage](#usage)
 - [Model Details](#model-details)
 - [Contributing](#contributing)
+- [Contact](#contact)
 - [License](#license)
 
 ## Project Overview
@@ -21,6 +22,10 @@ The Loan Eligibility Prediction Model is a machine learning application that det
 - `app.py`: The main application script that runs the web server and handles prediction requests.
 - `Loan Eligibility Prediction Model.ipynb`: Jupyter notebook containing the steps for data preprocessing, model training, and evaluation.
 - `model.pkl`: The serialized pre-trained machine learning model used for making predictions.
+- `Dataset/Data.csv`: The dataset used for training and evaluating the machine learning model.
+- `static/style.css`: The CSS file for styling the web application.
+- `templates/index.html`: The HTML template for the application's input form.
+- `templates/result.html`: The HTML template for displaying the prediction results.
 
 ## Setup and Installation
 
@@ -70,6 +75,11 @@ The machine learning model used in this project is a [type of model, e.g., Logis
 ## Contributing
 
 Contributions are welcome! Please fork this repository and submit a pull request with your proposed changes.
+
+## Contact
+
+Name: Mohamed Khaled Mahmoud Sayed  
+E-mail: Mo7ammad244@gmail.com
 
 ## License
 
